@@ -29,6 +29,8 @@ MRuby::Gem::Specification.new('mruby-r3') do |spec|
   spec.license = 'MIT'
   spec.authors = 'Sebastian Katzer'
   spec.summary = 'Router dispatcher'
+  
+  spec.add_dependency 'mruby-metaprog', core: 'mruby-metaprog'
 
   r3_dir = "#{spec.dir}/r3"
   r3_src = "#{r3_dir}/src"
